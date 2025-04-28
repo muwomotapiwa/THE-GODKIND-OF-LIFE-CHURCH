@@ -390,15 +390,11 @@ header {
 
 .tab-content {
     display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .tab-content.active {
     display: block;
-    opacity: 1;
 }
-
 
 .ministry-grid {
     display: grid;
@@ -734,9 +730,11 @@ footer {
     .contact-content {
         grid-template-columns: 1fr;
     }
+
     .about-image {
         order: -1;
     }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -755,24 +753,30 @@ footer {
         padding: 1rem 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
+
     .nav-links.active {
         display: flex;
     }
+
     .hamburger {
         display: block;
     }
+
     .hero h1 {
         font-size: 2rem;
     }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
+
     .hero-buttons .btn {
         width: 100%;
         max-width: 250px;
         margin-bottom: 1rem;
     }
+
     section {
         padding: 3rem 0;
     }
@@ -782,12 +786,15 @@ footer {
     .hero {
         min-height: 500px;
     }
+
     .hero h1 {
         font-size: 1.8rem;
     }
+
     .hero p {
         font-size: 1rem;
     }
+
     h2 {
         font-size: 1.5rem;
     }
