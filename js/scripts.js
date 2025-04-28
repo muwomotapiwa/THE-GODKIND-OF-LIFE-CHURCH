@@ -12,20 +12,27 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Ministry Tabs
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
+// Ministry Tabs (WRAPPED inside DOMContentLoaded)
+document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        // Remove active class from all buttons and contents
-        tabBtns.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
 
-        // Add active class to clicked button and corresponding content
-        btn.classList.add('active');
-        const tabId = btn.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
+            // Add active class to clicked button and corresponding content
+            btn.classList.add('active');
+            const tabId = btn.getAttribute('data-tab');
+            const tabToShow = document.getElementById(tabId);
+            if (tabToShow) {
+                tabToShow.classList.add('active');
+            } else {
+                console.error('No tab content found for ID:', tabId);
+            }
+        });
     });
 });
 
