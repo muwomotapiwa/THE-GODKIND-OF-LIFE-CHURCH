@@ -290,7 +290,7 @@ header {
 
 .service-card img {
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -452,7 +452,7 @@ header {
 
 .sermon-item img {
     width: 100%;
-    height: 180px;
+    height: 530px;
     object-fit: cover;
 }
 
