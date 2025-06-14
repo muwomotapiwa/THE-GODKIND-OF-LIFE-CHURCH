@@ -23,6 +23,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="#ministries">Ministries</a></li>
+                    <li><a href="#yondaism">YondaISM</a></li>
                     <li><a href="#sermons">Sermons</a></li>
                     <li><a href="#giving">Give</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -44,9 +45,9 @@
                 <div class="service-times">
                     <h3>Service Times</h3>
                     <ul>
-                        <li>Sunday Worship: 11:00 AM</li>
-                        <li>Mid-Week Service (Online): 7:00 PM</li>
-                        <li>Miracle Friday: 6:00 PM - 7:00 PM</li>
+                        <li><strong>Sunday Worship Service:</strong> <span>11:00 AM</span></li>
+                        <li><strong>Mid-Week (Online):</strong> <span>7:00 PM</span></li>
+                        <li><strong>Miracle Friday Prayer Service:</strong> <span>5:30 PM – 7:00 PM</span></li>
                     </ul>
                 </div>
             </div>
@@ -96,7 +97,7 @@
                 <div class="service-card">
                     <img src="assets/SundayService.jpeg" alt="Sunday Service">
                     <div class="service-card-content">
-                        <h3>Sunday Worship</h3>
+                        <h3>Sunday Worship Service</h3>
                         <span class="time">11:00 AM</span>
                         <p>Join us for powerful worship and biblical teaching that will transform your life.</p>
                         <a href="#" class="btn btn-outline">Learn More</a>
@@ -114,7 +115,7 @@
                 <div class="service-card">
                     <img src="assets/SundayService.jpeg" alt="Prayer Meeting">
                     <div class="service-card-content">
-                        <h3>Miracle Friday Prayer</h3>
+                        <h3>Miracle Friday Prayer Service</h3>
                         <span class="time">5:30 PM - 7:00 PM</span>
                         <p>Corporate prayer gathering where we seek God's presence and power together.</p>
                         <a href="#" class="btn btn-outline">Learn More</a>
@@ -134,7 +135,7 @@
             <div class="event-cards">
                 <div class="event-card">
                     <div class="event-date">
-                        <span class="day">28</span>
+                        <span class="day">29</span>
                         <span class="month">April</span>
                     </div>
                     <div class="event-content">
@@ -263,6 +264,36 @@
             </div>
         </div>
     </section>
+
+    <!-- YondaISM Section -->
+<section class="yondaism" id="yondaism">
+  <div class="container">
+    <h2>YondaISM</h2>
+    <div class="yondaism-content">
+      <div class="yondaism-image">
+        <img src="assets/yondaism.jpeg" alt="YondaISM">
+      </div>
+      <div class="yondaism-text">
+        <p>
+          YondaISM is an outreach expression of <strong>The GodKind of Life Church</strong> focused on training, activating, and launching believers into their unique callings and kingdom assignments.
+        </p>
+        <div class="yondaism-more hidden">
+          <p>
+            With a passion for global impact, YondaISM exists to equip men and women with the knowledge of God’s Word, the empowerment of the Holy Spirit, and the discipline to lead transformational ministries in every sphere of influence.
+          </p>
+          <p>
+            Through dynamic teachings, practical ministry sessions, and hands-on mentorship, students of YondaISM return to their communities bold, Spirit-led, and full of divine purpose. We prioritize spiritual impartation, doctrinal accuracy, and the manifestation of the supernatural as a lifestyle.
+          </p>
+          <p>
+            Whether you're a pastor, youth leader, entrepreneur, or visionary, YondaISM is your launchpad to walking fully in your divine mandate.
+          </p>
+        </div>
+        <button class="btn btn-outline" id="yondaismToggle">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Sermons Section -->
     <section class="sermons" id="sermons">
@@ -566,5 +597,17 @@
             }
         });
     </script>
+
+    <script>
+            const toggleBtn = document.getElementById('yondaismToggle');
+            const moreContent = document.querySelector('.yondaism-more');
+
+            toggleBtn.addEventListener('click', () => {
+                moreContent.classList.toggle('hidden');
+                toggleBtn.textContent = moreContent.classList.contains('hidden') ? 'Read More' : 'Show Less';
+            });
+    </script>
+
+
 </body>
 </html>
