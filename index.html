@@ -54,6 +54,36 @@
         </div>
     </section>
 
+    <section class="gospel-music-toggle">
+  <div class="container" style="text-align: center;">
+    <button id="toggleMusicPlayer" class="btn btn-outline">🎵 Play Gospel Music</button>
+  </div>
+
+  <div id="musicPlayerSection" class="music-player-container hidden">
+    <div class="music-player">
+      <audio controls preload="none">
+        <source src="assets/gospel-mix.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="music-info">
+        <p><strong>Track:</strong> Gospel House Uplifting Mix</p>
+        <p><strong>Artist:</strong> Graceful Christian Music</p>
+        <p><strong>YouTube:</strong> 
+          <a href="https://www.youtube.com/@GracefulChristianMusic" target="_blank">
+            @GracefulChristianMusic
+          </a>
+        </p>
+        <p class="disclaimer">
+          We do not own the rights to this music. All rights belong to the original artist.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
@@ -716,23 +746,31 @@
     </script>
 
     <script>
-  const storyBtn = document.getElementById('ourStoryBtn');
-  const storySection = document.getElementById('our-story-detail');
-  const backToAboutBtn = document.querySelector('#our-story-detail a[href="#about"]');
+        const storyBtn = document.getElementById('ourStoryBtn');
+        const storySection = document.getElementById('our-story-detail');
+        const backToAboutBtn = document.querySelector('#our-story-detail a[href="#about"]');
 
-  storyBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    storySection.classList.remove('hidden');
-    storySection.scrollIntoView({ behavior: 'smooth' });
-  });
+        storyBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            storySection.classList.remove('hidden');
+            storySection.scrollIntoView({ behavior: 'smooth' });
+        });
 
-  backToAboutBtn.addEventListener('click', function () {
-    storySection.classList.add('hidden');
-  });
-</script>
+        backToAboutBtn.addEventListener('click', function () {
+            storySection.classList.add('hidden');
+        });
+    </script>
 
+    <script>
+        const toggleMusicBtn = document.getElementById('toggleMusicPlayer');
+        const musicPlayerSection = document.getElementById('musicPlayerSection');
 
-    
-
+        toggleMusicBtn.addEventListener('click', () => {
+            musicPlayerSection.classList.toggle('hidden');
+            toggleMusicBtn.textContent = musicPlayerSection.classList.contains('hidden')
+            ? '🎵 Play Gospel Music'
+            : '🔊 Hide Music Player';
+        });
+    </script>    
 </body>
 </html>

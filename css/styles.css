@@ -197,6 +197,69 @@ header {
     flex-wrap: wrap;
 }
 
+.gospel-music {
+  background: var(--light);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.music-player {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.music-player audio {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.music-info p {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.music-info a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .music-player {
+    padding: 1.5rem;
+  }
+
+  .music-info p {
+    font-size: 0.95rem;
+  }
+}
+
+.music-player-container.hidden {
+  display: none;
+}
+
+.music-player-container {
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 .service-times {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
