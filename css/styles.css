@@ -1030,4 +1030,52 @@ footer {
   }
 }
 
+/* Mobile Banner Image */
+.hero-image {
+  display: none;
+  height: auto;
+  background: url('https://af6815798a.imgdist.com/pub/bfra/knkjywkm/kf0/0l6/7nx/WhatsApp%20Image%202025-04-22%20at%2008.12.59_437cd022.jpg') no-repeat center center/cover;
+  min-height: 280px;
+}
+
+/* Hero Section Default (Desktop) */
+/* Default: hide image banner */
+.hero-image-only {
+  display: none;
+}
+
+/* Mobile & Tablet: show full image */
+@media (max-width: 1024px) {
+  .hero-image-only {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-image-only img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 70px;
+  }
+
+  .hero {
+    background: #3a5a74; /* grey background for contrast */
+    background-image: none !important;
+    padding-top: 2rem;
+  }
+}
+
+/* Desktop: use background image like before */
+@media (min-width: 1025px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://af6815798a.imgdist.com/pub/bfra/knkjywkm/kf0/0l6/7nx/WhatsApp%20Image%202025-04-22%20at%2008.12.59_437cd022.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+  }
+}
 
