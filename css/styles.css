@@ -1055,13 +1055,13 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-    padding-top: 70px;
+    padding-top: 75px;
   }
 
   .hero {
     background: #3a5a74; /* grey background for contrast */
     background-image: none !important;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 }
 
