@@ -287,6 +287,49 @@ header {
     display: block;
 }
 
+/* Our Story Section */
+.our-story {
+  background: var(--light);
+  padding: 4rem 0;
+}
+
+.our-story.hidden {
+  display: none;
+}
+
+.our-story h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.story-block {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.story-block h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.story-block ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.story-block li {
+  margin-bottom: 0.5rem;
+}
+
+.story-block p {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+
 /* Services Section */
 .services {
     background: white;
@@ -331,6 +374,17 @@ header {
     margin-bottom: 1rem;
     display: block;
 }
+
+.service-detail {
+  background: var(--light);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.service-detail.hidden {
+  display: none;
+}
+
 
 /* Events Section */
 .events {
@@ -875,3 +929,5 @@ footer {
     text-align: left;
   }
 }
+
+

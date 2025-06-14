@@ -80,7 +80,7 @@
                             <li>Sanctification	~ Romans 5Vs17</li>
                         </ul>
                     </div>
-                    <a href="#" class="btn">Our Story</a>
+                    <a href="#our-story-detail" class="btn" id="ourStoryBtn">Our Story</a>
                 </div>
                 <div class="about-image">
                     <img src="assets/whoweare.jpeg" alt="Church congregation">
@@ -89,44 +89,128 @@
         </div>
     </section>
 
+    <section id="our-story-detail" class="our-story hidden">
+  <div class="container">
+    <h2>Our Story</h2>
+
+    <div class="story-block">
+      <h3>Vision</h3>
+      <p>Participators in the heavenly calling by soul winning, beautifying lives, equipping them, and sending them to impact their communities, cities, and the world at large with the Gospel of Our Lord Jesus Christ.</p>
+    </div>
+
+    <div class="story-block">
+      <h3>Mission</h3>
+      <p>To be the center and source of life, victory, and solutions that change status quos, as we give life to everyone and everything everywhere.</p>
+    </div>
+
+    <div class="story-block">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Paint the World Jesus – Spread the Gospel</li>
+        <li>Win souls and change them</li>
+        <li>Reveal identity in Christ</li>
+        <li>Send others to win others</li>
+        <li>Live victoriously and teach others to do the same</li>
+      </ul>
+    </div>
+
+    <div class="story-block">
+      <h3>Our Values</h3>
+      <ul>
+        <li>Truthful & God-fearing</li>
+        <li>Integrity & Honesty</li>
+        <li>Transparency & Dedication</li>
+        <li>Responsibility & Team Work</li>
+        <li>Accountability & Excellence</li>
+      </ul>
+    </div>
+
+    <div class="story-block">
+      <h3>Motto</h3>
+      <p><em>“Giving life daily, winning daily.”</em></p>
+    </div>
+
+    <div class="story-block">
+      <h3>Founder</h3>
+      <p>Apostle Richard Kings — Founder of Rich Kings Ministries / The GodKind of Life Church.</p>
+    </div>
+
+    <a href="#about" class="btn btn-secondary">Back to Who We Are</a>
+  </div>
+</section>
+
+
     <!-- Services Section -->
     <section class="services" id="services">
-        <div class="container">
-            <h2>Service Times & Location</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img src="assets/SundayService.jpeg" alt="Sunday Service">
-                    <div class="service-card-content">
-                        <h3>Sunday Worship Service</h3>
-                        <span class="time">11:00 AM</span>
-                        <p>Join us for powerful worship and biblical teaching that will transform your life.</p>
-                        <a href="#" class="btn btn-outline">Learn More</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="assets/SundayService.jpeg" alt="Bible Study">
-                    <div class="service-card-content">
-                        <h3>Mid-Week Service (Online)</h3>
-                        <span class="time">7:00 PM - 8:00 PM</span>
-                        <p>Deeper study of God's Word in a small group setting with practical application.</p>
-                        <a href="#" class="btn btn-outline">Learn More</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="assets/SundayService.jpeg" alt="Prayer Meeting">
-                    <div class="service-card-content">
-                        <h3>Miracle Friday Prayer Service</h3>
-                        <span class="time">5:30 PM - 7:00 PM</span>
-                        <p>Corporate prayer gathering where we seek God's presence and power together.</p>
-                        <a href="#" class="btn btn-outline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="#" class="btn">Get Directions</a>
-            </div>
+  <div class="container">
+    <h2>Service Times & Location</h2>
+    <div class="service-cards">
+      
+      <!-- Sunday Worship -->
+      <div class="service-card">
+        <img src="assets/SundayService.jpeg" alt="Sunday Service">
+        <div class="service-card-content">
+          <h3>Sunday Worship Service</h3>
+          <span class="time">11:00 AM</span>
+          <p>Join us for powerful worship and biblical teaching that will transform your life.</p>
+          <a href="#service-detail" class="btn btn-outline learn-more-btn"
+             data-title="Sunday Worship Service"
+             data-time="11:00 AM"
+             data-description="Join us for powerful worship and biblical teaching that will transform your life.">
+             Learn More
+          </a>
         </div>
-    </section>
+      </div>
+
+      <!-- Mid-Week Service -->
+      <div class="service-card">
+        <img src="assets/SundayService.jpeg" alt="Bible Study">
+        <div class="service-card-content">
+          <h3>Mid-Week Service (Online)</h3>
+          <span class="time">7:00 PM - 8:00 PM</span>
+          <p>Deeper study of God's Word in a small group setting with practical application.</p>
+          <a href="#service-detail" class="btn btn-outline learn-more-btn"
+             data-title="Mid-Week Service (Online)"
+             data-time="7:00 PM - 8:00 PM"
+             data-description="Deeper study of God's Word in a small group setting with practical application.">
+             Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Miracle Friday Prayer -->
+      <div class="service-card">
+        <img src="assets/SundayService.jpeg" alt="Prayer Meeting">
+        <div class="service-card-content">
+          <h3>Miracle Friday Prayer Service</h3>
+          <span class="time">5:30 PM - 7:00 PM</span>
+          <p>Corporate prayer gathering where we seek God's presence and power together.</p>
+          <a href="#service-detail" class="btn btn-outline learn-more-btn"
+             data-title="Miracle Friday Prayer Service"
+             data-time="5:30 PM - 7:00 PM"
+             data-description="Corporate prayer gathering where we seek God's presence and power together.">
+             Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="#" class="btn">Get Directions</a>
+    </div>
+  </div>
+</section>
+<!-- Dynamic Service Detail Section -->
+<section id="service-detail" class="service-detail hidden">
+  <div class="container">
+    <h2 id="detail-title">Service Title</h2>
+    <p><strong>Time:</strong> <span id="detail-time"></span></p>
+    <p id="detail-description"></p>
+    <a href="#services" class="btn btn-secondary">Back to Services</a>
+  </div>
+</section>
+
+
 
     <!-- Events Section -->
     <section class="events" id="events">
@@ -608,6 +692,47 @@
             });
     </script>
 
+    <script>
+        const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+        const detailSection = document.getElementById('service-detail');
+        const detailTitle = document.getElementById('detail-title');
+        const detailTime = document.getElementById('detail-time');
+        const detailDescription = document.getElementById('detail-description');
+
+        learnMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Populate the section
+            detailTitle.textContent = this.getAttribute('data-title');
+            detailTime.textContent = this.getAttribute('data-time');
+            detailDescription.textContent = this.getAttribute('data-description');
+
+            // Scroll to and show the section
+            detailSection.classList.remove('hidden');
+            detailSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <script>
+  const storyBtn = document.getElementById('ourStoryBtn');
+  const storySection = document.getElementById('our-story-detail');
+  const backToAboutBtn = document.querySelector('#our-story-detail a[href="#about"]');
+
+  storyBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    storySection.classList.remove('hidden');
+    storySection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  backToAboutBtn.addEventListener('click', function () {
+    storySection.classList.add('hidden');
+  });
+</script>
+
+
+    
 
 </body>
 </html>
