@@ -822,6 +822,7 @@ footer {
     }
 }
 
+/* YondaISM Section */
 .yondaism {
   background: var(--light);
   padding: 4rem 0;
@@ -834,10 +835,17 @@ footer {
   align-items: center;
 }
 
+.yondaism-image {
+  text-align: center;
+}
+
 .yondaism-image img {
   width: 100%;
+  max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
 }
 
 .yondaism-text p {
@@ -846,4 +854,24 @@ footer {
 
 .yondaism-more.hidden {
   display: none;
+}
+
+#yondaismToggle {
+  margin-top: 1rem;
+}
+
+/* Mobile layout fix */
+@media (max-width: 768px) {
+  .yondaism-content {
+    grid-template-columns: 1fr;
+  }
+
+  .yondaism-image {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .yondaism-text {
+    text-align: left;
+  }
 }
