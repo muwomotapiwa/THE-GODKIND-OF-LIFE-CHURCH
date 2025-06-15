@@ -60,36 +60,26 @@
 </section>
 
 
-
+    <!--Music Player-->
     <section class="gospel-music-toggle">
-  <div class="container" style="text-align: center;">
-    <button id="toggleMusicPlayer" class="btn btn-outline">🎵 Play Gospel Music</button>
-  </div>
-
-  <div id="musicPlayerSection" class="music-player-container hidden">
-    <div class="music-player">
-      <audio controls preload="none">
-        <source src="assets/gospel-mix.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-      <div class="music-info">
-        <p><strong>Track:</strong> Gospel House Uplifting Mix</p>
-        <p><strong>Artist:</strong> Graceful Christian Music</p>
-        <p><strong>YouTube:</strong> 
-          <a href="https://www.youtube.com/@GracefulChristianMusic" target="_blank">
-            @GracefulChristianMusic
-          </a>
-        </p>
-        <p class="disclaimer">
-          We do not own the rights to this music. All rights belong to the original artist.
-        </p>
+      <div class="container" style="text-align: center;">
+        <button id="toggleMusicPlayer" class="btn btn-outline">🎵 Play Gospel Music</button>
       </div>
-    </div>
-  </div>
-</section>
 
+      <div id="musicPlayerSection" class="music-player-container hidden">
+        <div class="music-player themed-player">
+          <audio id="audioPlayer" controls preload="metadata" style="width: 100%;">
+            <source id="audioSource" src="assets/Minamato.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
 
+          <ul class="music-playlist">
+            <li class="track active" data-src="assets/Minamato.mp3">🎵 Minamato 2</li>
+            <li class="track" data-src="assets/blue%20Chillzy%20-%20Richard%20Kings.mp3">🎵 blue Chillzy – Richard Kings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -896,5 +886,22 @@
     });
   });
 </script>
+<script>
+  const audioPlayer = document.getElementById('audioPlayer');
+  const audioSource = document.getElementById('audioSource');
+  const tracks = document.querySelectorAll('.music-playlist .track');
+
+  tracks.forEach(track => {
+    track.addEventListener('click', () => {
+      tracks.forEach(t => t.classList.remove('active'));
+      const src = track.getAttribute('data-src');
+      audioSource.src = src;
+      audioPlayer.load();
+      audioPlayer.play();
+      track.classList.add('active');
+    });
+  });
+</script>
+
   </body>
 </html>
