@@ -162,7 +162,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://af6815798a.imgdist.com/pub/bfra/knkjywkm/kf0/0l6/7nx/WhatsApp%20Image%202025-04-22%20at%2008.12.59_437cd022.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/MainBannerImage.jpeg') no-repeat center center/cover;
     height: 100vh;
     min-height: 600px;
     color: white;
@@ -171,6 +171,7 @@ header {
     text-align: center;
     padding-top: 80px;
 }
+
 
 .hero-content {
     max-width: 800px;
