@@ -1125,7 +1125,8 @@ footer {
 @media (min-width: 1025px) {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://af6815798a.imgdist.com/pub/bfra/knkjywkm/kf0/0l6/7nx/WhatsApp%20Image%202025-04-22%20at%2008.12.59_437cd022.jpg') no-repeat center center/cover;
+                url('assets/MainBannerImage.jpeg') no-repeat center center/cover;
+
     height: 100vh;
     color: white;
     display: flex;
